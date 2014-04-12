@@ -1,1 +1,4 @@
-from sys import argv
+"""
+This is a simplification of exercise 17 in LPTHW as suggested in the study drills.  I removed all but one print line and all prompting.
+"""
+from sys import argv ; from os.path import exists ; script, from_file, to_file = argv ; in_file = open(from_file) ; indata = in_file.read() ; out_file = open(to_file, 'w') ; out_file.write(indata) ; out_file.close() ; in_file.close() ; print "file copied."
